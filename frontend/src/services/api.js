@@ -3,7 +3,7 @@
  * Comunica con el backend
  */
 
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://campus-360-reservas.onrender.com';
 
 class APIService {
   constructor() {
