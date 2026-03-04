@@ -1,0 +1,24 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Escudo exterior -->
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a148c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a0845;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Escudo -->
+  <path d="M 100 20 L 160 60 L 160 120 Q 100 180 100 180 Q 100 180 40 120 L 40 60 Z" fill="url(#shieldGrad)" stroke="#d4af37" stroke-width="2"/>
+  
+  <!-- Triángulo interior (libro) -->
+  <path d="M 100 50 L 140 110 L 60 110 Z" fill="#d4af37" opacity="0.9"/>
+  
+  <!-- Línea horizontal (alma mater) -->
+  <line x1="65" y1="105" x2="135" y2="105" stroke="#4a148c" stroke-width="1.5"/>
+  
+  <!-- Circulo central (sello) -->
+  <circle cx="100" cy="75" r="12" fill="#4a148c" stroke="#d4af37" stroke-width="1"/>
+  
+  <!-- Texto "UNMSM" -->
+  <text x="100" y="155" font-size="12" font-weight="bold" text-anchor="middle" fill="#d4af37" font-family="Arial, sans-serif">UNMSM</text>
+</svg>

@@ -1,0 +1,154 @@
+.reservas-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.reserva-card {
+  border-left: 4px solid;
+}
+
+.reserva-card.estado-confirmada {
+  border-left-color: #28a745;
+}
+
+.reserva-card.estado-pendiente {
+  border-left-color: #ffc107;
+}
+
+.reserva-card.estado-rechazada {
+  border-left-color: #dc3545;
+}
+
+.reserva-card.estado-cancelada {
+  border-left-color: #6c757d;
+}
+
+.reserva-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.reserva-titulo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.reserva-titulo h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.estado-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.estado-badge.estado-confirmada {
+  background: #d4edda;
+  color: #155724;
+}
+
+.estado-badge.estado-pendiente {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.estado-badge.estado-rechazada {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.estado-badge.estado-cancelada {
+  background: #e2e3e5;
+  color: #383d41;
+}
+
+.reserva-id {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.reserva-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.info-item .label {
+  font-weight: 600;
+  color: #667eea;
+  font-size: 0.9rem;
+}
+
+.info-item span:not(.label) {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.reserva-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.detalles-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detalle-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+.detalle-item strong {
+  color: #667eea;
+}
+
+.detalle-item span {
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reserva-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .reserva-actions {
+    flex-direction: column;
+  }
+}

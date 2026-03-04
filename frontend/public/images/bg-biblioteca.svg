@@ -1,0 +1,39 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="libGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3e2723;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#5d4037;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c1810;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="wood" x="40" y="40" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="40" height="40" fill="#5d4037"/>
+      <line x1="0" y1="5" x2="40" y2="5" stroke="#4a2c23" stroke-width="0.5" opacity="0.3"/>
+      <line x1="0" y1="15" x2="40" y2="15" stroke="#3e2723" stroke-width="0.5" opacity="0.2"/>
+      <line x1="0" y1="25" x2="40" y2="25" stroke="#4a2c23" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Fondo gradiente cálido -->
+  <rect width="1920" height="1080" fill="url(#libGrad)"/>
+  
+  <!-- Textura de madera -->
+  <rect width="1920" height="1080" fill="url(#wood)" opacity="0.4"/>
+  
+  <!-- Sombras sutiles -->
+  <rect x="0" y="0" width="1920" height="100" fill="linear-gradient(180deg, rgba(0,0,0,0.3) 0%, transparent 100%)" />
+  <rect x="0" y="980" width="1920" height="100" fill="linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.2) 100%)" />
+  
+  <!-- Elementos decorativos - estantes -->
+  <line x1="100" y1="150" x2="400" y2="150" stroke="#d4af37" stroke-width="8" opacity="0.15" stroke-linecap="round"/>
+  <line x1="1400" y1="300" x2="1800" y2="300" stroke="#d4af37" stroke-width="8" opacity="0.15" stroke-linecap="round"/>
+  <line x1="200" y1="800" x2="600" y2="800" stroke="#d4af37" stroke-width="8" opacity="0.15" stroke-linecap="round"/>
+  
+  <!-- Rectángulos simulando libros -->
+  <rect x="150" y="200" width="60" height="150" fill="#8b4513" opacity="0.2" rx="3"/>
+  <rect x="250" y="220" width="50" height="140" fill="#a0522d" opacity="0.2" rx="3"/>
+  <rect x="1500" y="400" width="70" height="180" fill="#8b4513" opacity="0.2" rx="3"/>
+  <rect x="1620" y="420" width="55" height="160" fill="#a0522d" opacity="0.2" rx="3"/>
+  
+  <!-- Iluminación superior -->
+  <ellipse cx="960" cy="-100" rx="600" ry="400" fill="#d4af37" opacity="0.08"/>
+</svg>

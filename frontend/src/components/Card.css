@@ -1,0 +1,134 @@
+/* Card.css - Componente de Tarjeta Mejorado */
+
+.card {
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.18);
+  transform: translateY(-4px);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.8rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  background: linear-gradient(135deg, #4a148c 0%, #7b1fa2 100%);
+  color: white;
+}
+
+.card-icon {
+  font-size: 2.2rem;
+  flex-shrink: 0;
+  opacity: 0.95;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.card-content {
+  padding: 2rem;
+}
+
+/* Variantes */
+.card-simple {
+  border: 2px solid #e8e8e8;
+  background: rgba(255, 255, 255, 0.99);
+}
+
+.card-simple .card-header {
+  background: linear-gradient(135deg, #f8f9fa 0%, #f5f6fa 100%);
+  color: #2a0845;
+  border-bottom: 2px solid #e8e8e8;
+}
+
+.card-simple .card-title {
+  color: #2a0845;
+}
+
+.card-success .card-header {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+}
+
+.card-success .card-header::before {
+  content: '✓';
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.card-warning .card-header {
+  background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
+}
+
+.card-warning .card-header::before {
+  content: '⚠';
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.card-danger .card-header {
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+}
+
+.card-danger .card-header::before {
+  content: '✕';
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    border-radius: 12px;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    padding: 1.5rem;
+  }
+
+  .card-content {
+    padding: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    border-radius: 10px;
+  }
+
+  .card-header {
+    padding: 1.2rem 1rem;
+  }
+
+  .card-content {
+    padding: 1.2rem 1rem;
+  }
+
+  .card-icon {
+    font-size: 1.8rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+}
